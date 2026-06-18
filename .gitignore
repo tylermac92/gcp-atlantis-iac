@@ -1,0 +1,9 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+*-key.json
+atlantis-sa-key.json
+atlantis.env
+bin/
+atlantis.zip
+.atlantis/
