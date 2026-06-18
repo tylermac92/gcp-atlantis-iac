@@ -1,0 +1,14 @@
+version: 3
+projects:
+  - name: infrastructure
+    dir: infrastructure
+    workflow: scan-then-plan
+    apply_requirements: [approved, mergeable]
+workflows:
+  scan-then-plan:
+    plan:
+      steps:
+        - run: tflint
+        - run: trivy config .
+        - init
+        - plan
