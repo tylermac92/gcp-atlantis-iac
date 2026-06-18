@@ -1,5 +1,5 @@
 provider "google" {
-  project = "ardent-quarter-499716-k0"   # literal is fine here; small demo config
+  project = "ardent-quarter-499716-k0"   # literal is fine here, small demo config
   region  = "us-central1"
 }
 
